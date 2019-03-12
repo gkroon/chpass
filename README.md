@@ -50,11 +50,11 @@ Changing passphrases complete.
 
 ```
 
-# Dependencies
+## Dependencies
 1. coreutils (sys-apps/coreutils);
 2. gpg (app-crypt/gnupg);
 3. openssh (net-misc/openssh);
 4. shadow (sys-apps/shadow).
 
-# To do
-1. Figure out a way to change personal GPG key non-interactively. Couldn't get it to work with gpg itself, gpg-agent (pinentry loopback), nor expect.
+## To do
+1. Figure out a way to change personal GPG key non-interactively. Couldn't get it to work with `gpg` itself, `gpg-agent` (pinentry loopback), nor `expect`.
