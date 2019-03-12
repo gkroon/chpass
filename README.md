@@ -1,8 +1,8 @@
 # chpass
-A script for own convenience to change all my passwords. It changes the passphrases of my current user, root, my ssh key, my luks gpg key, and my personal gpg key. Prefix a space before running this command to avoid storing your passwords in your shell history.
+A script for my own convenience to change all my passwords. It changes the passphrases of my current user, root, my SSH key, my LUKS GPG key, and my personal GPG key. Prefix a space before running this command to avoid storing your passwords in your shell history.
 
 ## Full disclosure
-I'm not a developer by any means, and you may find this repository a comical attempt to automate installing Gentoo on a Raspberry Pi 2/3. And you're probably right, so feel free to:
+I'm not a developer by any means, and you may find this repository a comical attempt to change passphrases. And you're probably right, so feel free to:
 
 1. Not use it;
 2. Show me how to make it better (you are encouraged!).
@@ -46,7 +46,7 @@ $  sudo ./chpass.sh -o 'oldpass' -n 'newpass' -l -r -s ~/.ssh/id_ed25519 \
 >>> Changing SSH key passwd ............................... [ ok ]
 >>> Changing LUKS key passwd .............................. [ ok ]
 
-Changing passwords complete.
+Changing passphrases complete.
 
 ```
 

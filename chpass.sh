@@ -175,4 +175,4 @@ if [ -n "${GPG_KEY_ID}" ]; then
 fi
 
 echo
-echo "Changing passwords complete."
+echo "Changing passphrases complete."
