@@ -41,20 +41,21 @@ Options:
 $  sudo ./chpass.sh -o 'oldpass' -n 'newpass' -l -r -s ~/.ssh/id_ed25519 \
   -L /boot/root.gpg
 
->>> Changing user passwd .................................. [ ok ]
->>> Changing root passwd .................................. [ ok ]
->>> Changing SSH key passwd ............................... [ ok ]
->>> Changing LUKS key passwd .............................. [ ok ]
+ * Changing user passwd ...                                 [ ok ]
+ * Changing root passwd ...                                 [ ok ]
+ * Changing SSH key passwd ...                              [ ok ]
+ * Changing LUKS key passwd ...                             [ ok ]
 
 Changing passphrases complete.
 
 ```
 
 ## Dependencies
-1. coreutils (sys-apps/coreutils);
-2. gpg (app-crypt/gnupg);
-3. openssh (net-misc/openssh);
-4. shadow (sys-apps/shadow).
+1. bash (app-shells/bash);
+2. coreutils (sys-apps/coreutils);
+3. gpg (app-crypt/gnupg);
+4. openssh (net-misc/openssh);
+5. shadow (sys-apps/shadow).
 
 ## To do
 1. Figure out a way to change personal GPG key non-interactively. Couldn't get it to work with `gpg` itself, `gpg-agent` (pinentry loopback), nor `expect`.
